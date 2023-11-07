@@ -3,6 +3,8 @@ import requests
 import sys
 import re
 
+APIKEY = ""
+
 dateToday = datetime.date.isoformat(datetime.date.today())
 query = sys.argv[1]
 
@@ -16,7 +18,7 @@ if len(sys.argv) > 2:
     categories=sys.argv[3]
 
 def wallpaper_search_api(_query):
-	url = f"https://wallhaven.cc/api/v1/search?q={_query}&categories={categories}&apikey=j4xlcmJUGilmO37BhKx9Q2msUUuGfkLm&purity={purity}"
+	url = f"https://wallhaven.cc/api/v1/search?q={_query}&categories={categories}&apikey={APIKEY}&purity={purity}"
 	res = requests.get(url)
 	json_data = res.json()
 	dl_links = []
