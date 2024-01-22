@@ -1,5 +1,5 @@
 # Walled
-Simple python script to access and download wallpapers from wallhaven.cc using wallhaven API
+Python script to access and download wallpapers from wallhaven.cc using wallhaven API
 
 # Configuration
 1. Edit walled.py and add your api key from wallhaven site
