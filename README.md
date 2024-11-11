@@ -1,18 +1,21 @@
-# Walled
-Python script to access and download wallpapers from wallhaven.cc using wallhaven API
+# walled
+Python script for downloading wallpers from wallhaven.
 
-# Configuration
-1. Edit walled.py and add your api key from wallhaven site
-   
 # Usage
-use in dir you want to download wallpapers
+./walled [QUERY] [PURITY] [CATEGORY] [SORTING]
 
-```walled <query>```
+Example: ./walled "anime" 100 010 views
 
-you can use numbers from 000-111 to filter results search by SFW, Sketchy, NSFW:
-
-```walled <query> 111```
-
-and also by categorize by General, Anime, People:
-
-```walled <query> 111 111```
+    QUERY: string without spaces or in "" that contains query
+    
+    PURITY: xyz - three values, that can be either 0 or 1
+        X - SFW
+        Y - Sketchy
+        Z - NSFW - if you want to search up NSFW content you need an API key!
+    
+    CATEGORIES: xyz - three values, that can be either 0 or 1
+        X - General
+        Y - Anime
+        Z - People
+    
+    Sorting options:  "relevance", "random", "date_added", "views", "favourites", "toplist", "hot"
