@@ -4,7 +4,7 @@ Python script for downloading wallpers from wallhaven.
 # Usage
 ./walled [QUERY] [PURITY] [CATEGORY] [SORTING]
 
-Example: ./walled "anime" 100 010 views
+Example: ``./walled "anime" 100 010 views``
 
     QUERY: string without spaces or in "" that contains query
     
